@@ -9,27 +9,44 @@
     <title>About</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <span class="navbar-brand p-3">Bill Fehlberg</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="index.html">About<span</a>
         <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <a class="nav-item nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
       </div>
     </div>
   </nav>
-  <div class="container bg-light ml-4 mr-5 my-5">
+  <div class="container bg-light ml-4 mr-5 my-4">
     <div class="row border-bottom mb-2">
-      <div class="about col-md-4">
-        <H1>About</H1>
+      <div class="about col-sm-4">
+        <H1>Contact</H1>
       </div>
     </div>
     <div class="row">
-      <div class="body col-md-12 pr-2">
-        //insert contact form
-        </div>
+      <div class="body col-md-12 pr-2 pb-3">
+        <form>
+          <div class="form-group">
+            <label for="formGroupName">Name</label>
+            <input type="text" class="form-control" id="formGroupName" placeholder="First and Last Name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupEmail">Email</label>
+            <input type="email" class="form-control" id="formGroupEmail" placeholder="jondoe@gmail.com">
+          </div>
+        </form>
+          <div class="form-group">
+            <label for="formGroupMessage">Message</label>
+            <textarea class="form-control" id="formGroupMessage">
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
